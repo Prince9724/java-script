@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ele</title>
+</head>
+
+<body>
+
+
+    <script>
+        const unit = 180;
+        let total;
+        if (unit >= 1 && unit <= 20) {
+            total = unit * 1;
+            console.log("your bill amount is - " + total);
+        }
+        else if (unit >= 21 && unit <= 50) {
+            total = 20 + (unit - 20) * 1.5;
+            console.log("your bill amount is - " + total);
+        }
+        else if(unit>=50 && unit<= 100){
+            total = (20*1)+(30*1.5)+(unit-50)*2;
+            console.log("your bill amount is - "+ total)
+        }
+        else if (unit>=101 && unit<=150){
+            total=20+45+(50*2)+(unit-100)*2.5;
+            console.log("your bill amount is - "+ total)
+        }
+        else if(unit>=151)
+        {
+            total=20+45+100+125+(unit-150)*5;
+            console.log("your bill amount is - "+ total);
+        }
+       
+        else {
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
