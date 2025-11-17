@@ -126,8 +126,81 @@
 
 
 // 12.Look at this series: 14, 28, 20, 40, 32, 64, ... What number should come next?
-let n=14;
-for(let i=1;i<=8;i++){
+// let n=14;
+// for(let i=1;i<=8;i++){
+//     document.writeln(n,)
+//     if( i%2==1){
+//         n=n*2; 
+//        }
+//        else{
+//         n=n-8;
+//        }
+//     }
+
+
+// 13.Look at this series: 2, 4, 6, 8, 10, ... What number should come next?
+// let n=2;
+// for(let i=1;i<=7;i++)
+// {
+//     document.writeln(n,);
+//     n=n+2;
+// }
+
+
+// 14.Look at this series: 201, 202, 204, 207, ... What number should come next?
+// let n=201;
+// let diff = 1;
+// for(let i=1;i<=6;i++){
+//     document.writeln(n,);
+
+// }
+
+
+// 15.Look at this series: 544, 509, 474, 439, ... What number should come next?
+// let n = 544;
+// for(let i=1;i<=6;i++){
+//     document.writeln(n,);
+//     n=n-35;
     
+// }
+
+
+// 16.Look at this series: 80, 10, 70, 15, 60, ... What number should come next?
+// let n =80;
+// let m=10;
+// for(let i=1;i<=7;i++){
+//     document.writeln(n,);
+//     document.writeln(m,);
+//     n=n-10;
+//     m=m+5;
+// }
+
+
+// 17.Look at this series: 2, 6, 18, 54, ... What number should come next?
+// let n=2
+// for(let i=1;i<=6;i++){
+//     document.writeln(n,);
+//     n=n*3;
+// }
+
+// 18.Look at this series: 5.2, 4.8, 4.4, 4, ... What number should come next?
+// let n=5.2;
+// for(let i=1;i<=6;i--){
+//     document.writeln(n,);
+//     n = n-0.4;
+// }
+
+// 19.Look at this series: 8, 6, 9, 23, 87 , ... What number should come next?
+let n=8;
+let m=1;
+for(let i=1;i<=7;i++){
+    document.writeln(n);
+    n=(n*i)-(i+1);
+     
 }
+//8*1*-2=6
+//6*2-3=9
+//9*3-4=23
+//23*4-5=87
+//87*5-6=429
 
