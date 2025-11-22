@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function sumofevenno(n){
+        //     let sum = 0;
+        //     for(let i = 1; i <= n; i++){
+        //         sum = sum + i;
+        //     }
+        //     return sum;
+        // }
+        // let num = 10;
+        // let result = sumofevenno(num);
+        //     document.writeln("sum of even number " + " = " + result);
+
+
+
+        function sumofevenno(n) {
+            let sum = 0;
+            let i = 1;
+            while (i<=n) {
+                if( i % 2 == 0){
+                    sum = sum + i;
+                }
+                i++;
+            }
+            return sum;
+        }
+        // let num = 10;
+        let result = sumofevenno(10);
+        document.writeln("sum of even number " + " = " + result);
+    </script>
+</body>
+
+</html>
