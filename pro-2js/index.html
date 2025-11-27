@@ -78,67 +78,49 @@
 
         // }
         // 7.WAP to find minimum between four numbers using nested if-else.      
-        // const num1 = 10, num2 = 100, num3 = 1000, num4 = 100000;
-        // //num1,num2,num3,num4
-        // if (num1 > num2) {
-        //     //num1,num3,num4
-        //     if (num1 > num3) {
-        //         // num1,num4
-        //         if (num1 > num4) {
-        //             //num1
-        //             conosle.log("num1 is max")
+        // let num1 = 10, num2 = 100, num3 = 1000, num4 = 10000;
+        //     if(num1==num2&&num2==num3&&num3==num4&&num4==num1){
+        //         document.writeln("all are equal ")
+        //     }else{
+                
+
+        // if (num1 < num2) {
+        //     if (num1 < num3) {
+        //         if (num1 < num4) {
+        //             document.writeln("Num1 is minimum !")
+        //         } else {
+        //             document.writeln("num4 is minimum !")
         //         }
-        //         else {
-        //             // num4 
-        //             console.log("num4 is max")
+        //     } else {
+        //         if (num3 < num4) {
+        //             document.writeln("num3 is minimum !")
+
+        //         } else {
+        //             document.writeln("num4 is minimum !")
+
         //         }
         //     }
-        //     else {
-        //         //num3,num4
-        //         if (num3 > num4) {
-        //             //num3
-        //             console.log("num3 is max")
+
+        // } else {
+        //     if (num2 < num3) {
+        //         if (num2 < num4) {
+        //             document.writeln("num2 is minimum !")
+
+        //         } else {
+        //             document.writeln("num4 is minimum !")
+
         //         }
-        //         else {
-        //             // num4 
-        //             console.log("num4 is max")
+        //     } else {
+        //         if (num3 < num4) {
+        //             document.writeln("num3 is minimum !")
+
+        //         } else {
+        //             document.writeln("num4 is minimum !")
+
         //         }
         //     }
         // }
-        // else {
-        //     //num2,num3,num4
-        //     if (num2 > num3) {
-        //         //num2, num4
-        //         if (num2 > num4) {
-        //             //num2
-        //             console.log("num2 is max")
-        //         }
-        //         else {
-        //             //num4
-        //             console.log("num4 is max")
-        //         }
-
         //     }
-        //     else {
-        //         //num3,num4
-        //         if (num3 > num4) {
-        //             //num3
-        //             console.log("num3 is max")
-
-        //         }
-        //         else {
-        //             if (num1 == num2 && num2 == num3 && num3 == num4) {
-        //                 console.log("all are equal")
-        //             }
-        //             else {
-        //                 // num4 
-        //                 console.log("num4 is max")
-        //             }
-
-
-        //         }
-        //     }
-        //}
 
         // 8.WAP to find maximum between three numbers using ladder if-else.
         //     const num1=100, num2=100,num3 =1000;
@@ -720,15 +702,57 @@
         //     document.writeln("The Number is Prime Number")
         // }
 
+        // 29.  WAP to check whether a number is Armstrong number or not using while loop, do…while loop, for loop.
+        //while loop
+
+        // let original = 153;
+        // let num = original;
+        // let sum = 0;
+        // let r = 0;
+
+        // while (num > 0) {
+        //     r = num % 10;
+        //     sum = sum + (r * r * r);
+        //     num = Math.floor(num / 10);
+        // }
+
+        // if (sum === original) {
+        //     console.log("Number is Armstrong.");
+        // }
+        // else {
+        //     console.log("Number is Not Armstrong.");
+        // }
+
+        //do while loop
+
+        // let original = 121;
+        // let num = original;
+        // let sum = 0;
+        // let r = 0;
+
+        // do {
+        //     r = num % 10;
+        //     sum = sum + (r * r * r);
+        //     num = Math.floor(num / 10);
+        // } while (num > 0);
+
+        // if (sum === original) {
+        //     console.log("Number is Armstrong.");
+        // }
+        // else {
+        //     console.log("Number is Not Armstrong.");
+        // }  
+
+
           // 30.WAP to check whether a number is Magic Number or not using while loop, do…while loop, for loop.
 
-        let num = 1234;
-        if (num % 9 == 1) {
-            document.writeln("The Number is Magic Number !");
+        // let num =  123;
+        //  if (num % 9 == 1) {
+        //     document.writeln("The Number is Magic Number !");
 
-        } else {
-            document.writeln("The Number is not Magic Number ! ")
-        }
+        // } else {
+        //     document.writeln("The Number is not Magic Number ! ")
+        // }
 
 
 
