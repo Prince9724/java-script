@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.inp{
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+}
+.btn{
+    height: 50px;
+    width: 70px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight:600 ;
+}
+.todos{
+    padding: 10px;
+   
+}
+.todo{
+    height: 90px;
+    width: 250px;
+    background:linear-gradient(to left, rgb(237, 137, 137),rgb(82, 82, 189),rgb(71, 162, 71));
+    border-radius: 8px;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    align-content: center;
+     margin-top: 15px;
+     color: white;
+
+}
