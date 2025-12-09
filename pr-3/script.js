@@ -61,19 +61,77 @@
 // let result = sumArray(arr);
 // document.writeln(result);
 
-// 5.Write a function that takes an array and returns a new array in reversed order.
+// 5.Write a function that takes an array and returns a new array in reversed order.let arr = [10, 20, 2, 50, 60];
+// let arr=[10,20,2,50,60];
 
-let arr=[10,20,2,50,60];
-function rev(arr){
-    for(let i= arr.length-1 ;i>0;i--){
-         
+// function rev(arr){
+//     let rev = [];
 
-    }
-    let re = arr[i];
-    return re;
-}
-let result = rev(arr);
-// document.writeln(result);//???????? douts.
+//     for(let i=arr.length; i>=0; i--){
+//         rev.push(arr[i]); 
+//     }
+//     return rev;
+// }
+// let result = rev(arr);
+// document.writeln(result);
+
+//???????? douts.
 
 // 6.Write a function that takes an array and returns only even numbers in a new array.
+// let arr=[10,20,2,5,60];
 
+// function rev(arr){
+//     let rev = [];
+
+//     for(let i=arr.length; i>=0; i--){
+//         if(arr[i]%2==0){
+            
+//             rev.push(arr[i]);
+//         } 
+//     }
+//     return rev;
+// }
+// let result = rev(arr);
+
+// document.writeln(result);
+
+// 7.Write a function that takes an array and returns only odd numbers in a new array.
+//     let arr=[10,20,11,5,60];
+
+// function rev(arr){
+//     let rev = [];
+
+//     for(let i=arr.length; i>=0; i--){
+//         if(arr[i]%2==1){
+            
+//             rev.push(arr[i]);
+//         } 
+//     }
+//     return rev;
+// }
+// let result = rev(arr);
+
+// document.writeln(result);
+
+// 8.Write a function that takes an array and counts how many positive numbers are present.
+
+
+
+
+
+
+// question No.17
+// function rev(arr){
+//     let rev = [];
+
+//     rev[0] = arr[arr.length - 1];
+
+//     for(let i = 0; i < arr.length - 1; i++){
+//         rev[i + 1] = arr[i];
+//     }
+
+//     return rev;
+// }
+//  let arr=[10,20,2,50,60];
+// let result = rev(arr);
+// document.writeln(result);
