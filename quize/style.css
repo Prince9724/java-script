@@ -1,0 +1,48 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    height: 100vh;
+    width: 100%;
+    
+  
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background: no-repeat;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/030/943/946/small/world-map-background-news-studio-background-for-news-report-and-breaking-news-on-world-live-report-video.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.email-font{
+    color: white;
+}
+.email-font:hover{
+    transform:scale(1.3);
+}
+.email-size{
+        border: 1px solid black;
+}
+.form-box{
+    height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;  
+     
+    /* background-color: antiquewhite; */
+ }
+ 
+ 
+ 
+

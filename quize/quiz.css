@@ -1,0 +1,26 @@
+
+body{
+    height: 100vh;
+    width: 100%;
+    
+  
+}
+ .container{
+    height: 100%;
+    width: 100%;
+    padding-top: 80px;
+ 
+   
+}
+.list{
+    background-color: transparent;
+}
+.quiz-page{
+    height: 100%;
+    width: 100%;
+    background: no-repeat;
+    background-image: url("https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/09/09/Pictures/_6f2d13e6-f28a-11ea-8bce-519453830254.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
