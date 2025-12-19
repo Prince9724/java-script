@@ -14,31 +14,42 @@
 <body>
 
     <section class="quiz-page">
+        
         <div class="container ">
+            <h1 class="d-flex justify-content-center mt-5 ">Quiz Qestions 🎯💡</h1>
             <div class="timer" id="timer">
-                <h1 style="color: red;"class="mb-5" id="timer-text"></h1>
+                <h1 style="color: red;" class="mb-5" id="timer-text"></h1>
             </div>
-            <ul class="list-group list">
-            <li class="list-group-item fw-bold " id="question">1. An item</li>
-            <li class="list-group-item"id="option-a">
-                <div><input type="radio"name="checked"><span class="ms-2" >A second item</span></div>
-            </li>
-            <li class="list-group-item" id="option-b">
-                <div><input type="radio"name="checked"><span class="ms-2">A second item</span></div>
-            </li>
-            <li class="list-group-item" id="option-c"> 
-                <div><input type="radio"name="checked"><span class="ms-2">A second item</span></div>
-            </li>
-            <li class="list-group-item" id="option-d"> 
-                <div><input type="radio"name="checked"><span class="ms-2">A second item</span></div>
-            </li>
-        </ul>
-        <a href=" " class="btn btn-primary mt-2" id="next-button">next</a>
+            <div class="quiz-questions">
+                <ul class="list-group list">
+                <li class="list-group-item fw-bold " id="question">1. An item</li>
+                <li class="list-group-item">
+                    <div>
+                        <input type="radio" name="option" id="radio-option-a" value="0"><span class="ms-2" id="option-a">A second item</span>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div>
+                        <input type="radio" name="option" id="radio-option-b" value="1"><span class="ms-2" id="option-b">A second item</span>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div>
+                        <input type="radio" name="option" id="radio-option-c" value="2"><span class="ms-2" id="option-c">A second item</span>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div>
+                        <input type="radio" name="option" id="radio-option-d" value="3"><span class="ms-2" id="option-d">A second item</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="next-button-class">
+                <a class="btn btn-primary mt-2 ms-0 " id="next-button">next</a>
+            </div>
+            </div>
         </div>
 
-        <div class="page-desion">
-            <img src="" alt="" class="img-quiz">
-        </div>
     </section>
 
 

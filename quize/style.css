@@ -1,48 +1,95 @@
-/* *{
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-} */
-body{
-    height: 100vh;
-    width: 100%;
-    
-  
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-.main{
-    height: 100%;
-    width: 100%;
-    background: no-repeat;
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/030/943/946/small/world-map-background-news-studio-background-for-news-report-and-breaking-news-on-world-live-report-video.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.container{
-    height: 100%;
-    width: 100%;
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-.email-font{
-    color: white;
+
+/* Main section */
+.main {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Form box (glass effect) */
+.form-box {
+    max-width: 420px;
+    margin: auto;
+    padding: 35px 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+/* Labels */
+.email-font {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
 }
 .email-font:hover{
-    transform:scale(1.3);
+    transform: scale(1.2);
+    /* cursor: pointer; */
 }
-.email-size{
-        border: 1px solid black;
+/* Inputs */
+.email-size {
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
 }
-.form-box{
-    height: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;  
-     
-    /* background-color: antiquewhite; */
- }
- 
- 
- 
 
+.email-size:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #00eaff;
+}
+
+/* Help text */
+#emailHelp {
+    font-size: 12px;
+    color: #e0e0e0;
+}
+
+/* Sign in button */
+#signin-button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #00eaff, #0077ff);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+#signin-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 234, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .form-box {
+        padding: 25px 20px;
+    }
+}
