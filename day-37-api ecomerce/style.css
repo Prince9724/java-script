@@ -1,0 +1,154 @@
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== ANIMATED BACKGROUND ===== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #0d6efd, #6610f2, #20c997, #0dcaf0);
+    background-size: 400% 400%;
+    animation: bgMove 12s ease infinite;
+}
+
+/* ===== BACKGROUND ANIMATION ===== */
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    padding: 15px 25px;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.85) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    animation: navDrop 0.9s ease;
+}
+
+@keyframes navDrop {
+    from {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #0d6efd !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #6610f2 !important;
+    transform: translateY(-3px);
+}
+
+/* ===== SEARCH ===== */
+.form-control {
+    border-radius: 25px;
+    padding: 8px 15px;
+}
+
+.btn-outline-success {
+    border-radius: 25px;
+}
+
+/* ===== PRODUCT SECTION ===== */
+#container {
+    margin-top: 70px;
+}
+
+/* ===== CARD ===== */
+.card {
+    border: none;
+    border-radius: 22px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    transition: all 0.5s ease;
+    animation: cardFade 1.2s ease;
+}
+
+@keyframes cardFade {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 35px 70px rgba(0,0,0,0.4);
+}
+
+/* ===== IMAGE ===== */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.15) rotate(1deg);
+}
+
+/* ===== CARD CONTENT ===== */
+.card-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* ===== LIST ===== */
+.list-group-item {
+    border: none;
+    background: #f4f6fb;
+    font-weight: 500;
+}
+
+/* ===== BUTTON AREA ===== */
+.card-body:last-child {
+    display: flex;
+    gap: 12px;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary,
+.btn-success {
+    flex: 1;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.35s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(13,110,253,0.6);
+}
+
+.btn-success:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(25,135,84,0.6);
+}
