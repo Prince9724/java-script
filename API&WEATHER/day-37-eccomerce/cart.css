@@ -1,0 +1,173 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== Page Background ===== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bgMove 8s infinite alternate;
+}
+.cart{
+    padding-bottom: 200px;
+}
+.m-B-6{
+    margin-bottom: 60px;
+}
+/* Background animation */
+@keyframes bgMove {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+/* ===== Cart Container ===== */
+#cart-container {
+    padding: 20px;
+}
+
+/* ===== Card Design ===== */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    overflow: hidden;
+    transform: translateY(40px);
+    opacity: 0;
+    animation: cardFade 0.8s ease forwards;
+}
+
+/* Card load animation */
+@keyframes cardFade {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ===== Product Image ===== */
+.card img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* ===== Card Body ===== */
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    border-radius: 30px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+/* Remove Button */
+.btn-danger {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: none;
+}
+
+.btn-danger:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 75, 43, 0.5);
+}
+
+/* Plus Minus Buttons */
+.btn-success {
+    background: linear-gradient(135deg, #00c853, #64dd17);
+    border: none;
+}
+
+.btn-success:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 200, 83, 0.5);
+}
+
+/* ===== Quantity Section ===== */
+span span {
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 576px) {
+    .card {
+        max-width: 100%;
+    }
+}
+/* ===== Fixed Bottom Total Bar ===== */
+.container.fixed-bottom {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px 20px;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.6s ease;
+}
+
+/* Slide animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ===== Total Price Text ===== */
+#total-price {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1px;
+    animation: pulse 1.8s infinite;
+}
+
+/* Price pulse animation */
+@keyframes pulse {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 576px) {
+    #total-price {
+        font-size: 1.2rem;
+    }
+}
+
