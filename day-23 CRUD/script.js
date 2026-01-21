@@ -93,4 +93,5 @@ addNote();
 
 }
 add_note_button.addEventListener("click",  handleUpdateAndEdit);
-//29.45 sec
+
+ 
