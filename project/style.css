@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+}
+
+.card {
+  background: linear-gradient(135deg, #ffffff, #f3f6ff);
+  padding: 30px;
+  border-radius: 16px;
+  margin: 50px auto;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.card label {
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+#title,
+#description,
+#date,
+#select {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: #f9f9ff;
+}
+
+#title:focus,
+#description:focus,
+#date:focus,
+#select:focus {
+  border-color: #5f2c82;
+  box-shadow: 0 0 5px rgba(95,44,130,0.5);
+}
+
+#add-note {
+  background: linear-gradient(135deg, #5f2c82, #49a09d);
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+#add-note:hover {
+  transform: scale(1.07);
+  opacity: 0.9;
+}
+
+.note-section {
+  padding: 30px;
+}
+
+#note-container > div {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  width: 260px;
+  margin: 15px;
+  border-radius: 15px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+#note-container > div:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+ 
+#note-container h5 {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#note-container p {
+  font-size: 14px;
+  opacity: 0.95;
+}
+ 
+#note-container .btn {
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100% !important;
+  }
+
+  #add-note {
+    width: 100% !important;
+  }
+}
