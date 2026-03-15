@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+<body>
+    
+    <script>
+        //Write a function that takes an array and returns the smallest number in the array.
+        const arr = [1,-2,3,4,5,16,17,8,9,110];
+    function smallest (){
+        let small = arr[0];
+        arr.forEach((e)=>{
+            if(small>e){
+                small = e;
+            }
+        })
+        return small;
+    }
+    let ans= smallest(arr);
+    document.writeln(ans);
+    
+    </script>
+</body>
+</html>

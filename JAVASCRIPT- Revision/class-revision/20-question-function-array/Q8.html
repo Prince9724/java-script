@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+</head>
+<body>
+    <script>
+        //Write a function that takes an array and returns a new array containing only positive numbers.
+        const arr = [1, 2, 3,4, 5, 6, -7, 8, 9, 10];
+        function positive (){
+            const aa=[];
+          arr.map((e)=>{
+                if(e>0){
+                    aa.push(e);
+                }
+             })
+             return aa;
+        }
+        let ans = positive(arr)
+        document.writeln(ans);
+        console.log(ans);
+ 
+ </script>
+</body>
+</html>
