@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maximum-number</title>
+</head>
+<body>
+    
+    <script>
+        let a=3,b=2,c=16,d=4,e=9;
+
+      if(a>b){
+        if(a>c){
+            if(a>d){//c   d se bda hai to 
+                if(a>e){// agar d e se bda hai to d print hoga 
+                    console.log("a is max ")
+                }
+                else{//agar e d se bda hoga to e print hoga. 
+                    console.log("e is max")
+                }
+            }
+            else{//d a se bda hai to 
+                // d,e
+                if(d>e){
+                    console.log("d is max ")
+                }
+                else{
+                    console.log("e is max")
+                }
+            }
+        }
+        else{//c is greater tha a
+            //c,d,e
+            if(c>d){//ye condition true hui to
+               //d,e
+                if(c>e){
+                    console.log("c is max")
+                }else{
+                    console.log("e is max")
+                }
+            }
+            else{
+                // d,e
+                if(d>e){// d is greater than e 
+                    console.log("d is max")
+                }
+                else{
+                    console.log("e is max")
+                }
+            }
+        }
+      }
+      else{ // b is greater than a
+        //b,c,d,e
+        if(b>c){
+            
+            if(b>d){
+                if(b>e){
+                    console.log("b is max")
+                }
+                else{
+                    console.log("e is max")
+                }
+            }
+            else{
+                //d,e
+                if(d>e){
+                    console.log("d is max")
+                }
+                else{
+                    console.log("e is max")
+                }
+            }
+        }
+        else{
+            //c,d,e
+            if(c>d){
+                if(c>e){
+                    console.log("c is max")
+                }
+                else{
+                    console.log("e is max")
+                }
+            }
+            else{
+                //d,e
+                if(d>e){
+                    console.log("d is max")
+                }
+                else{
+                    console.log(" e is max")
+                }
+            }
+        }
+      }
+
+
+    </script>
+</body>
+</html>

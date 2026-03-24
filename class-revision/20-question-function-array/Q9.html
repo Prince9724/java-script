@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+</head>
+<body>
+    <script>
+        //Write a function that takes an array and returns the index of a given element.
+        const arr = [1, 2, 3,4, 5, 6, 7, 8, 9, 10];
+        const elem = 10;
+        function index(){
+            for(let i =0; i<=arr.length; i++){
+                if(elem===arr[i]){
+                     return "index number of element : "+i;
+                }
+            }
+            return "number is not exist in array "
+        }
+        let ans = index(arr);
+        document.writeln(ans);
+
+    </script>
+</body>
+</html>

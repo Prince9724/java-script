@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+</head>
+<body>
+    <script>
+        //Write a function that counts how many odd numbers are present in an array.
+        const arr = [1, 2, 3, 111,4, 5, 16, 17, 8, 9, 110];
+        function oddnumber(){
+            count = 0;
+            arr.forEach((e)=>{
+                if(e%2==1){
+                    document.writeln(e);
+                    count++;
+                }
+            })
+            return count;
+        }
+        let ans = oddnumber(arr);
+        document.writeln("<br> odd count = ",ans);
+    </script>
+</body>
+</html>

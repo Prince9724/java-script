@@ -1,0 +1,177 @@
+.bg-blur {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: #00ffcc;
+  filter: blur(150px);
+  top: 10%;
+  left: 20%;
+  z-index: -1;
+  animation: move 8s infinite alternate;
+}
+
+@keyframes move {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(200px, 150px); }
+}
+/* 🌈 Background Animation */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+}
+
+/* 🌊 Animated Gradient */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🧊 Glass Container */
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+  transition: 0.4s;
+  .container {
+  position: relative;
+  overflow: hidden;
+}
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* 🔢 Counter Text */
+#count {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 0 0 20px rgba(255,255,255,0.6);
+  transition: 0.3s;
+}
+
+/* 💥 Button Base */
+button {
+  border: none;
+  padding: 12px 20px;
+  margin: 8px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✨ Glow Effect */
+button::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,0.2);
+  transition: 0.4s;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+/* 🎯 Individual Button Colors */
+.btn1 {
+  background: linear-gradient(45deg, #00ff87, #60efff);
+  /* box-shadow: 0 0 10px #00ff87; */
+}
+
+.btn2 {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  box-shadow: 0 0 10px #ff416c;
+}
+
+.btn3 {
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+  /* box-shadow: 0 0 10px #ffd200; */
+}
+
+.btn4 {
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
+  box-shadow: 0 0 10px #8e2de2;
+}
+
+/* 🚀 Hover Animation */
+button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  #count {
+    font-size: 50px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}/* 🟢 Cursor Dot */
+.cursor {
+  width: 15px;
+  height: 15px;
+  background: #00ffcc;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+/* 🔵 Big Blur Effect */
+.cursor-blur {
+  width: 200px;
+  height: 200px;
+  background: #00ffcc;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(100px);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 998;
+}
+.counter {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+
+  position: absolute;
+  top: 20px;
+  white-space: nowrap;
+
+  animation: moveAlternate 4s ease-in-out infinite alternate;
+}
+
+/* 🔄 Left ↔ Right Animation */
+@keyframes moveAlternate {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}

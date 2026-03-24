@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q14</title>
+</head>
+<body>
+    
+    <Script>
+        //Write a function that checks whether a given value exists in an array or not.
+            const arr = [1,1,2,2,3,4,5,6,7,4,7,8,9]
+            let x = 2; 
+            let right = "Number is not exits ";
+        function duplicateElement(){
+            for(let i =0; i<=arr.length; i++){
+                if(arr[i] === x){
+                    right = "Number is exist"
+                }
+
+            }
+            return right;
+        }
+        let ans = duplicateElement(arr);
+        document.writeln(ans);
+
+        let result = x
+    </Script>
+</body>
+</html>
