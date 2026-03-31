@@ -18,7 +18,7 @@ const Quates = [
     {
         "quote": "You miss 100% of the shots you don’t take.", "author": "Wayne Gretzky"
     },
-    
+
     {
         "quote": "The most difficult thing is the decision to act, the rest is merely tenacity.", "author": "Amelia Earhart"
     },
@@ -136,7 +136,7 @@ const Quates = [
     {
         "quote": "Start where you are. Use what you have.  Do what you can.", "author": "Arthur Ashe"
     },
-     
+
     {
         "quote": "Fall seven times and stand up eight.", "author": "Japanese Proverb"
     },
@@ -161,7 +161,7 @@ const Quates = [
     {
         "quote": "If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on.", "author": "Sheryl Sandberg"
     },
-     
+
     {
         "quote": "If the wind will not serve, take to the oars.", "author": "Latin Proverb"
     },
@@ -308,38 +308,79 @@ const author = document.getElementById("author");
 const previous = document.getElementById("btn-prev");
 const like = document.getElementById("btn-like")
 const next = document.getElementById("btn-next");
-let index = 0;
+let index = Number(localStorage.getItem("index")) || 0;
 
 const img = document.getElementById("quote-img");
 
+function localset() {
+    localStorage.setItem("index", index.toString());
+}
 const thought = () => {
     qoutes.textContent = Quates[index].quote;
     author.textContent = Quates[index].author;
 
-   img.src = `https://picsum.photos/900/300?random=${index}`;
-        // .split(" ")
-        // .slice(0, 2)
-        // .join(",")},motivation`;
+    img.src = `https://picsum.photos/900/300?random=${index}`;
+    // .split(" ")
+    // .slice(0, 2)
+    // .join(",")},motivation`;
 }
 thought();
-next.addEventListener("click",()=>{
-    if(index==Quates.length-1){
+next.addEventListener("click", () => {
+    if (index == Quates.length - 1) {
         alert("the end");
         return;
     }
     index++;
+    localStorage.setItem("index", index.toString());
     thought();
-    console.log(index);
-
+    // console.log(index);
+    const str = Math.floor(Math.random() * 16581375).toString(16);
+    document.body.style.backgroundColor = "#" + str;
 })
-previous.addEventListener("click",()=>{
-    if(index==0){
+// function favroit (index){
+//     // localset();
+//     localStorage.setItem("index",JSON.stringify(index));
+//     alert("added to localstorage")
+// }
+// like.addEventListener("click",favroit)
+previous.addEventListener("click", () => {
+    if (index == 0) {
         alert("not available start from here .")
         return;
         // previous.classList("btn btn-seconday disabled")
         // previous.classList.add("btn", "btn-secondary", "disabled");
     }
     index--;
+    localStorage.setItem("index", index.toString());
 
     thought();
+    const str = Math.floor(Math.random() * 16581375).toString(16);
+    document.body.style.backgroundColor = "#" + str;
 })
+
+// const button = document.getElementById("btn");
+// button.addEventListener("click",()=>{
+//     const str = Math.floor(Math.random()* 16581375).toString(16);
+//     document.body.style.backgroundColor = "#"+str;
+//     button.textContent ="#"+str
+// })
+// const likequotes = ()=>{
+//      localStorage.setItem("index",JSON.stringify(index));
+// }
+
+
+///// plane 
+
+like.addEventListener("click", () => {
+    const favQuote = JSON.parse(localStorage.getItem("favlist")) || [];
+    const res = favQuote.findIndex((e) => e.quote == Quates[index].quote)
+    if (res == -1) {
+        favQuote.push(Quates[index]);
+        localStorage.setItem("favlist", JSON.stringify(favQuote));
+        // alert("Quote is added to Favroit list !!")
+    }else{
+    alert("Quote is already added to Favroit List !!");
+    }
+
+
+});
